@@ -57,3 +57,67 @@ pip install -r requirements.txt
   ```
   HF_TOKEN=your_huggingface_api_token
   ```
+
+## ▶️ Workflow
+
+### Step 1: Preprocess PDFs
+
+Before running the Streamlit app, you need to preprocess the PDFs to create the vector store.
+
+1. Place your PDFs in the `data/` directory.
+2. Run the preprocessing script:
+
+```bash
+python preprocess.py
+```
+This script will:
+
+- Load the PDFs.
+
+- Split the content into chunks.
+
+- Generate embeddings using HuggingFace models.
+
+- Save the embeddings in the FAISS vector store.
+
+### Step 2: Run the Streamlit App
+Once the vector store is created, you can run the Streamlit app:
+
+```bash
+streamlit run medai.py
+```
+
+### Step 3: Interact with the Chatbot
+- Open the application in your browser (usually at http://localhost:8501).
+- Ask your medical questions in the chat input box.
+- The chatbot will retrieve answers from the preprocessed vector store.
+
+## 🖼️ Screenshots
+
+### Main Interface
+
+![Screenshot 2025-04-08 222845](https://github.com/user-attachments/assets/73c28c3d-8a3d-4b01-8214-3066d0bd0740)
+
+
+## 🤝 Contributing
+
+Contributions are welcome! If you'd like to contribute, please fork the repository and submit a pull request.
+
+---
+
+## 🌟 Acknowledgments
+
+- [LangChain](https://python.langchain.com/)
+- [Streamlit](https://streamlit.io/)
+- [HuggingFace](https://huggingface.co/)
+- [FAISS](https://github.com/facebookresearch/faiss)
+
+--- 
+
+## 🙋‍♂️ Support
+
+If you encounter any issues or have questions, feel free to open an issue in the repository or contact me at [athulakhil28@gmail.com](mailto:athulakhil28@gmail.com).<br>
+My LinkedIn profile : [LinkedIn](https://www.linkedin.com/in/h-athulkrishnan/)
+
+
+
