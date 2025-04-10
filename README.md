@@ -40,7 +40,7 @@ Medi-AI-Chatbot/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/Medi-AI-Chatbot.git
+git clone https://github.com/athul-2003/Medi-AI-Chatbot.git   
 cd Medi-AI-Chatbot
 ```
 ### 2. Set Up a Virtual Environment
